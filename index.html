@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+<style> 
+#panel, #flip {
+    padding: 0px;
+    text-align: left;
+    background-color: black;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 0px;
+    display: none;
+}
+</style>
+
+<script> 
+$(document).ready(function(){
+    $("#flip2").click(function(){
+        $("#panel2").slideToggle("slow");
+    });
+});
+</script>
+<style> 
+#panel2, #flip2 {
+    padding: 0px;
+    text-align: left;
+    background-color: black;
+   
+}
+
+#panel2 {
+    padding: 0px;
+    margin-left: 20px;
+    display: none;
+}
+</style>
+
+<script> 
+$(document).ready(function(){
+    $("#flip3").click(function(){
+        $("#panel3").slideToggle("slow");
+    });
+});
+</script>
+<style> 
+#panel3, #flip3 {
+    padding: 0px;
+    text-align: left;
+    background-color: black;
+   
+}
+
+#panel3 {
+    padding: 0px;
+    margin-left: 20px;
+    display: none;
+}
+</style>
+</head>
+<body>
+
+<div class="text-center">
+  <h1>This is My first Web Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>
+<!--responsove toggle -->
+<div id="flip" class="w3-hide-large"><a class="navbar-brand" href="#"><i class="fa fa-bars" style="font-size:48px;color:white"></i></a></div>
+
+<!--insider toggle-->
+<div id="panel">
+	<a class="navbar-brand" href="#"><i class="fa fa-home" style="font-size:48px;color:white"></i></a>
+		<div id="flip2"><h3 style="color:white">Web Design</h3></div>
+		<div id="panel2"><h3 ><a class="dropdown-item" style="color:white" href="#" >Link 1</a><a class="dropdown-item" style="color:white" href="#">Link 1</a></h3>
+
+		</div>
+
+		<div id="flip3"><h3 style="color:white">Programming Language</h3></div>
+		<div id="panel3"><h3><a class="dropdown-item" style="color:white" href="#">Link 1</a><a class="dropdown-item" style="color:white" href="#">Link 1</a></h3>
+
+		</div>
+
+
+</div>
+<!--ends here-->
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark w3-hide-small w3-hide-medium">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"><i class="fa fa-home" style="font-size:20px;color:white"></i></a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+  	<li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Web Design</a>
+      <div class="dropdown-menu">      	
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Programming Languages</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Client Side Scripting</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Server Side Scripting</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Data Base</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </li>   
+  </ul>  
+</nav>
+
+
+  
+
+	
+<div class="row">
+
+    <div class="col-sm-4" style="background-color:White;">
+
+    	<div class="card" style="margin:5px;"><a href="#" style="text-decoration:none"><h1 style="font-size:100px;font-family: 'Quattrocento', serif;color:black;" align="center">C</h1><h2 tyle="font-size:100px;font-family: 'Quattrocento', serif;color:black;" align="center">C Programming</h2></a><hr>
+  			<div class="card-body"><h3>C tutorial</h3><p>This Introductory chapter helps beginner programmer to get started in C programming.</p></div>
+		  </div>
+
+	  </div>
+
+    <div class="col-sm-4" style="background-color:white;">
+
+        <div class="card" style="margin:5px;"><a href="#" style="text-decoration:none"><h1 style="font-size:100px;font-family: 'Quattrocento', serif;color:black;" align="center">C++</h1><h2 tyle="font-size:100px;font-family: 'Quattrocento', serif;color:black;" align="center">C++ Programming</h2></a><hr>
+        <div class="card-body"><h3>C++ tutorial</h3><p>This Introductory chapter helps beginner programmer to get started in C++   programming.</p></div>
+      </div>
+
+    </div>
+
+    <div class="col-sm-4" style="background-color:white">
+
+    <div class="card" style="margin:5px;"><a href="#" style="text-decoration:none"><h1 style="font-size:100px;font-family: 'Quattrocento', serif;color:black;" align="center">Ad</h1><h2 tyle="font-size:100px;font-family: 'Quattrocento', serif;color:black;" align="center">Ad</h2></a><hr>
+        <div class="card-body"><h3>Ad</h3><p>Ad<br><br></p></div>
+      </div>
+
+    </div>
+
+    <div class="col-sm-4" style="background-color:white">
+
+    <div class="card" style="margin:5px;"><a href="#" style="text-decoration:none"><h1 style="font-size:100px;font-family: 'Quattrocento', serif;color:black;" align="center">Ad</h1><h2 tyle="font-size:100px;font-family: 'Quattrocento', serif;color:black;" align="center">Ad</h2></a><hr>
+        <div class="card-body"><h3>Ad</h3><p>Ad<br><br></p></div>
+      </div>
+
+    </div>
+
+    <div class="col-sm-4" style="background-color:white">
+
+    <div class="card" style="margin:5px;"><a href="#" style="text-decoration:none"><h1 style="font-size:100px;font-family: 'Quattrocento', serif;color:black;" align="center">Ad</h1><h2 tyle="font-size:100px;font-family: 'Quattrocento', serif;color:black;" align="center">Ad</h2></a><hr>
+        <div class="card-body"><h3>Ad</h3><p>Ad<br><br></p></div>
+      </div>
+
+    </div>
+
+    <div class="col-sm-4" style="background-color:white">
+
+    <div class="card" style="margin:5px;"><a href="#" style="text-decoration:none"><h1 style="font-size:100px;font-family: 'Quattrocento', serif;color:black;" align="center">Ad</h1><h2 tyle="font-size:100px;font-family: 'Quattrocento', serif;color:black;" align="center">Ad</h2></a><hr>
+        <div class="card-body"><h3>Ad</h3><p>Ad<br><br></p></div>
+      </div>
+
+    </div>
+    
+ </div>
+
+
+</body>
+</html>
